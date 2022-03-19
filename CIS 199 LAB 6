@@ -1,0 +1,82 @@
+//Lab 6
+//CIS 199-02
+//10/25/2020
+//Lab creates patterns of triangles with nested loops
+using System;
+using static System.Console;
+
+namespace Lab6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int numRows = 10; //max number of rows
+
+            int i, j, k; //defined variables for loops
+
+            WriteLine("(a)"); //loops for pattern a
+            for (i=1; i<=numRows; i++)
+            {
+                for (j=1; j<=numRows - i; j++)
+                {
+                    Write("");
+                }
+                for (k=1; k<=i; k++)
+                {
+                   Write("*");
+                }
+                WriteLine("");
+            }
+            ReadLine();
+
+            WriteLine("(b)");//loops for pattern b 
+            for(i=1; i<=numRows; i++)
+            {
+                for (j=1; j<=numRows - i ; j++)
+                {
+                    Write("");
+                }
+                for(k=1; k<=j; k++)
+                {
+                    Write("*");
+                }
+                WriteLine("");
+            }
+            ReadLine();
+
+            WriteLine("(c)"); //loops for pattern c
+            for(i=1; i<=numRows; i++)
+            {
+                for(j=1; j<=numRows - i; j++)
+                {
+                    Write(" ");
+                }
+                for(k=1; k<=j ; k++)
+                {
+                    Write("*");
+                }
+                WriteLine("");
+            }
+            ReadLine();
+
+           WriteLine("(d)"); //loops for pattern d
+
+            for (i=1; i<=numRows; i++)
+            {
+                for (j=1; j<=numRows - i; j++)
+               {
+                    Write(" ");
+                }
+                for (k=1; k<=i; k++)
+                {
+                   Write("*");
+                }
+               WriteLine("");
+            }
+            ReadLine();
+        }
+    }
+
+}
+    
